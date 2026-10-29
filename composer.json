@@ -1,0 +1,47 @@
+{
+    "name": "swkweb/events-netzp-migration",
+    "description": "One-time migration of NetzpEvents6 data to SwkwebEvents.",
+    "version": "1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "SWK Web",
+            "email": "info@swk-web.com",
+            "homepage": "https://www.swk-web.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "shopware/core": "~6.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Swkweb\\EventsNetzpMigration\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Swkweb\\EventsNetzpMigration\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "Swkweb\\EventsNetzpMigration\\SwkwebEventsNetzpMigration",
+        "label": {
+            "en-GB": "Events migration from NetzpEvents6",
+            "de-DE": "Events-Migration von NetzpEvents6"
+        },
+        "description": {
+            "en-GB": "Moves events, dates, participants, tickets and shop settings from NetzpEvents6 to SwkwebEvents in one run. Uninstall this plugin after the cutover is done.",
+            "de-DE": "Übernimmt Veranstaltungen, Termine, Teilnehmer, Tickets und Shop-Einstellungen von NetzpEvents6 nach SwkwebEvents. Nach der Umstellung deinstallieren."
+        },
+        "manufacturerLink": {
+            "en-GB": "https://www.swk-web.com",
+            "de-DE": "https://www.swk-web.com"
+        },
+        "supportLink": {
+            "en-GB": "https://doku.swk-web.com",
+            "de-DE": "https://doku.swk-web.com"
+        }
+    }
+}

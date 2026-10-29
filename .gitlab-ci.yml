@@ -1,0 +1,6 @@
+include:
+  - component: $CI_SERVER_FQDN/shopware6/ci-components/shopware-plugin@1
+    inputs:
+      # composer.json allows 6.7.1, but the v6.7.1 image pairs core with Twig 3.19, which core cannot run on.
+      min-shopware-version: 'v6.7.2'
+      store-upload: false
